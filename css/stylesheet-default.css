@@ -1,3 +1,13 @@
+:root {
+    --c-ui-primary: #f4f0f0;
+    --c-ui-primary-text: #202020;
+    --c-ui-primary-hover: #e4e1e1;
+    --c-ui-primary-secondary: #6a676e;
+    --c-ui-primary-accent: #7c98f3;
+    --c-ui-button: #8ec3fd;
+    --c-ui-button-text: #d9d9d9;
+    --c-ui-button-secondary: #3f5a77;
+}
 html, body {
     height: 100%;
     margin: 0;
@@ -10,3 +20,44 @@ html, body {
 .map-container {
     height: 100%;
 }
+
+
+
+
+.map-controls-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c-ui-primary);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding:20px;
+}
+
+.map-controls-bar-status {
+    user-select:none;
+    font-size: 8pt;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+.map-controls-bar-status svg {
+    width: 10px;
+    height: 10px;
+    padding:5px;
+}
+
+.map-controls-bar-modelsel-current {
+    text-align: center;
+    padding: 10px;
+    font-size: 15pt;
+    border-radius: 10px;
+    background-color: var(--c-ui-primary);
+    color: var(--c-ui-primary-text);
+    user-select:none;
+    transition: background-color 0.15s ease;
+}
+.map-controls-bar-modelsel-current:hover {
+    background-color: var(--c-ui-primary-hover);
+}
+.map-controls-bar-modelsel-list {}
